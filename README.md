@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Kyrsten Urbayan's Portfolio
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
 
-## Available Scripts
+## Description
+A portfolio using React to display my work samples for potential employers and clients.
 
-In the project directory, you can run:
+![Screenshot of the portfolio](./assets/images/budget-tracker-sc.PNG)
 
-### `npm start`
+## Table of Contents
+* [Link](#link)
+* [Installation](#installation)
+* [Usage](#usage)
+* [React](#react)
+* [License](#license)
+* [Questions](#questions)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Link
+[Click here](https://my-budget-tracker101.herokuapp.com/) to go to the deployed portfolio.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
+To install the app on your machine for development:
 
-### `npm test`
+1. Install [Node.js](https://nodejs.org/en/) and [MongoDB](https://www.mongodb.com/) if you haven't already.
+2. Clone this repository onto your computer.
+3. Navigate to the root of this repository on the command line.
+4. Run `npm install` on the command line.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
+1. Go to the deployed application at [https://my-budget-tracker101.herokuapp.com/](https://my-budget-tracker101.herokuapp.com/).
+2. Enter a name for the transaction.
+3. Enter an amount for the transaction.
+4. Click 'Add Funds' to deposit or 'Subtract Funds' to withdraw.
 
-### `npm run build`
+## React
+This site is built with React.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## License
+Source code is licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Contents of this site are © Copyright 2021 Kyrsten Urbayan. All rights reserved.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Questions
+- [GitHub](https://github.com/kg-phantom)
