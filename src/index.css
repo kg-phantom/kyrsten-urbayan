@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Smooch';
+  src: local('Smooch'), url('./fonts/Smooch-Regular.ttf');
+}
+
 main {
 	margin: 0 auto;
 	max-width: 90%;
@@ -45,7 +50,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Smooch';
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -91,7 +96,11 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  height: 150px;
+  background-image: url("./assets/images/pexels-anni-roenkae-3219951.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header a {
@@ -182,6 +191,10 @@ textarea {
 
 .space-evenly {
   justify-content: space-evenly;
+}
+
+.align-center {
+  align-items: center;
 }
 
 .flex-end {
