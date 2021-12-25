@@ -1,11 +1,13 @@
 import React from 'react';
 import Nav from '../Navigation';
 
-function Header() {
+function Header({ currentPage, setCurrentPage }) {
     return (
         <header className='flex-row space-between align-center px-2'>
             <h1>Kyrsten Urbayan</h1>
-            <Nav></Nav>
+            <Nav 
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}></Nav>
         </header>
     );
 }
