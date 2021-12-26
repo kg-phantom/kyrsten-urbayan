@@ -61,11 +61,12 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   border-bottom: solid 1px;
 }
 
 h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1.75rem;
 }
 
@@ -169,7 +170,8 @@ input:focus {
 }
 
 li {
-  list-style: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: lighter;
 }
 
 nav a:hover {
@@ -177,6 +179,7 @@ nav a:hover {
 }
 
 nav li {
+  list-style: none;
   cursor: pointer;
   font-family: 'Smooch';
   font-size: 1.5em;
