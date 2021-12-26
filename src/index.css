@@ -10,9 +10,9 @@ main {
 }
 :root {
   --primary: #ba324f;
-  --secondary: #F3A847;
+  --secondary: #0E1116;
   --tertiary: #B12704;
-  --light: #fafafa;
+  --light: #FDECEF;
   --dark: #000000;
   --darker: #111111;
   --error: rgb(228, 46, 1);
@@ -62,6 +62,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  border-bottom: solid 1px;
 }
 
 h3 {
@@ -81,8 +82,14 @@ h6 {
 }
 
 p {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1.1rem;
+  font-weight: lighter;
   margin-top: 0;
+}
+
+.about-text {
+  width: 80%;
 }
 
 a {
@@ -96,7 +103,7 @@ a:hover {
 }
 
 header {
-  height: 150px;
+  height: fit-content;
   background-image: url("./assets/images/pexels-anni-roenkae-3219951.jpg");
   background-position: center;
   background-size: cover;
@@ -130,6 +137,13 @@ button[disabled] {
 
 img {
   max-width: 100%;
+}
+
+.headshot {
+  width: auto;
+  height: auto;
+  max-height: 400px;
+  border-radius: 20px;
 }
 
 span[role="img"] {
