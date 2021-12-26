@@ -4,7 +4,7 @@ import { faLinkedin, faGithub, faStackOverflow } from '@fortawesome/free-brands-
 
 function Footer() {
     return (
-        <footer className='flex-row space-evenly px-max'>
+        <footer className='my-5 flex-row space-evenly px-max'>
             <a href='https://www.linkedin.com/in/kyrsten-gabrielle-urbayan-aa062918b/'>
                 <FontAwesomeIcon icon={faLinkedin} />
             </a>

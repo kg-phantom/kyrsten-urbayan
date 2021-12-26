@@ -89,7 +89,7 @@ p {
 }
 
 .about-text {
-  width: 80%;
+  width: 100%;
 }
 
 a {
@@ -142,7 +142,7 @@ img {
 .headshot {
   width: auto;
   height: auto;
-  max-height: 400px;
+  max-height: 300px;
   border-radius: 20px;
 }
 
@@ -180,6 +180,11 @@ nav li {
   cursor: pointer;
   font-family: 'Smooch';
   font-size: 1.5em;
+  font-weight: lighter;
+}
+
+label {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: lighter;
 }
 
