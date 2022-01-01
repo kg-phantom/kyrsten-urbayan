@@ -7,8 +7,10 @@ function Portfolio() {
     return (
         <div>
             <h2 className='py-2'>Portfolio</h2>
-            <div>
-                <Project projectList={projectList}></Project>
+            <div className="flex-row space-between">
+                {
+                    projectList.map(project => <Project project={project} key={project.name}></Project>)
+                }
             </div>
         </div>
     );

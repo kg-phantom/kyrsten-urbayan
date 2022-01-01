@@ -281,8 +281,12 @@ textarea {
 }
 
 .card {
-  width: 25%;
+  width: 40%;
   text-align: center;
+}
+
+.project-card {
+  margin: 10px
 }
 
 .img-thumbnail {
