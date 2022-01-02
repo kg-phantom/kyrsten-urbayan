@@ -8,35 +8,37 @@
 ## Description
 A portfolio using React to display my work samples for potential employers and clients.
 
-![Screenshot of the portfolio](./assets/images/budget-tracker-sc.PNG)
+![Screenshot of the portfolio](./src/assets/images/portfolio-sc.PNG)
 
 ## Table of Contents
 * [Link](#link)
-* [Installation](#installation)
-* [Usage](#usage)
 * [React](#react)
 * [License](#license)
 * [Questions](#questions)
 
 ## Link
-[Click here](https://my-budget-tracker101.herokuapp.com/) to go to the deployed portfolio.
-
-## Installation
-To install the app on your machine for development:
-
-1. Install [Node.js](https://nodejs.org/en/) and [MongoDB](https://www.mongodb.com/) if you haven't already.
-2. Clone this repository onto your computer.
-3. Navigate to the root of this repository on the command line.
-4. Run `npm install` on the command line.
-
-## Usage
-1. Go to the deployed application at [https://my-budget-tracker101.herokuapp.com/](https://my-budget-tracker101.herokuapp.com/).
-2. Enter a name for the transaction.
-3. Enter an amount for the transaction.
-4. Click 'Add Funds' to deposit or 'Subtract Funds' to withdraw.
+[Click here](https://kg-phantom.github.io/kyrsten-urbayan/) to go to the deployed portfolio.
 
 ## React
 This site is built with React.
+
+### Header Component
+The `Header` component is used on multiple pages on the site to display the navigation and current page.
+
+### Navigation Component
+The `Navigation` component is a child of the `Header` component and takes in the properties `currentPage` and `setCurrentPage` to properly highlight the active page.
+
+### Project Component
+The `Project` component is used multiple times on the Portfolio page in order to display the screenshots, links, and information for each project. This component takes in the projects array from `projects.json`, and the array is mapped through in order to render the information for each project.
+
+### Footer Component
+The `Footer` component is used on multiple pages to display the icons and links to my LinkedIn, GitHub, and StackOverflow.
+
+### Pages
+There are multiple page components `About`, `Contact`, `Portfolio`, and `Resume`.
+
+The `Contact` page features a contact form that informs the user of any missing or invalid inputs.
+
 
 ## License
 Source code is licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.
