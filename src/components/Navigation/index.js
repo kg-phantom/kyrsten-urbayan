@@ -11,7 +11,7 @@ function Nav(props) {
                 {
                     tabs.map(tab => (
                         <li 
-                        className={`mx-2 ${
+                        className={`mx-2 px-1 ${
                             currentPage === tab && 'navActive'
                         }`}
                         key={tab}
