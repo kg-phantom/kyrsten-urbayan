@@ -15,10 +15,10 @@
     },
     {
         "id": 2,
-        "name": "Weather Dashboard",
-        "tech": "HTML, CSS, JS, API",
-        "github": "https://github.com/kg-phantom/weather-dashboard",
-        "url": "https://kg-phantom.github.io/weather-dashboard/"
+        "name": "Gotta Go",
+        "tech": "CSS, JS, API, Node, Express, MongoDB, GraphQL, ApolloServer",
+        "github": "https://github.com/missroseblue/gotta-go",
+        "url": "https://gotta-go.herokuapp.com/"
     },
     {
         "id": 3,
