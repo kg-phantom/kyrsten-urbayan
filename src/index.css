@@ -1,25 +1,24 @@
 @font-face {
-  font-family: 'Smooch';
-  src: local('Smooch'), url('./fonts/Smooch-Regular.ttf');
+  font-family: "Smooch";
+  src: local("Smooch"), url("./fonts/Smooch-Regular.ttf");
 }
 
 main {
-	margin: 0 auto;
-	max-width: 90%;
+  margin: 0 auto;
+  max-width: 90%;
   padding: 50px 30px;
 }
 :root {
   --primary: #ba324f;
-  --secondary: #0E1116;
-  --tertiary: #B12704;
-  --light: #FDECEF;
+  --secondary: #0e1116;
+  --tertiary: #b12704;
+  --light: #fdecef;
   --dark: #000000;
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-
 }
 
 * {
@@ -37,11 +36,10 @@ body {
   font-weight: 600;
   line-height: 1.5;
   font-size: 18px;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   background: var(--dark);
   color: var(--light);
-  font-family: 'Poiret One', cursive;
-
+  font-family: "Poiret One", cursive;
 }
 
 h1,
@@ -50,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Smooch';
+  font-family: "Smooch";
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -66,7 +64,8 @@ h2 {
 }
 
 h3 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 1.75rem;
 }
 
@@ -83,7 +82,8 @@ h6 {
 }
 
 p {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 1.1rem;
   font-weight: lighter;
   margin-top: 0;
@@ -104,11 +104,14 @@ a:hover {
 }
 
 header {
-  height: fit-content;
+  height: 100%;
   /* background-image: url("./assets/images/pexels-anni-roenkae-3219951.jpg"); */
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+}
+
+.header-bg {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
 }
 
 header a {
@@ -119,7 +122,7 @@ button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
@@ -128,12 +131,12 @@ button {
 }
 
 button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 button[disabled] {
   cursor: default;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 img {
@@ -166,43 +169,64 @@ input {
 
 input:focus {
   border: 1px solid var(--secondary);
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 li {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: lighter;
 }
 
-nav a:hover {
-  text-decoration: none;
-}
-
+/* Nav styles */
 nav li {
   list-style: none;
   cursor: pointer;
-  font-family: 'Smooch';
+  font-family: "Smooch";
   font-size: 1.5em;
   font-weight: lighter;
-  border-radius: 5px;
-  box-shadow: inset 0 0 0 0 var(--tertiary);
-  transition: .5s;
 }
 
-nav li:hover {
-  box-shadow: inset 0 0 100px 0 var(--tertiary);
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
 }
+.underline:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navActive {
+  border-bottom: solid 2px var(--primary);
+}
+/* end Nav styles */
 
 label {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: lighter;
 }
 
 textarea {
-	width: 100%;
-	height: 120px;
-	border: 3px solid #cccccc;
-	padding: 5px;
+  width: 100%;
+  height: 120px;
+  border: 3px solid #cccccc;
+  padding: 5px;
 }
 
 .container {
@@ -303,56 +327,56 @@ textarea {
 }
 
 .modalBackdrop {
-	background: rgba(0, 0, 0, .65);
-	bottom: 0;
-	left: 0;
-	overflow: auto;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 1;
+  background: rgba(0, 0, 0, 0.65);
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .modalContainer {
-	background: var(--darker);
-	border-radius: 5px;
-	max-width: 100%;
-	margin: 50px auto;
-	padding: 15px;
-	width: 960px;
+  background: var(--darker);
+  border-radius: 5px;
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 15px;
+  width: 960px;
 }
 
 .modalTitle {
-	font-size: 18px;
-	font-weight: 600;
-	margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
 }
 
 button {
-	background: var(--primary);
-	border: 0;
-	border-radius: 5px;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: 600;
-	margin-bottom: 30px;
-	padding: 10px 15px;	
+  background: var(--primary);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 10px 15px;
 }
 
 a {
-	border-radius: 5px;
-	color: var(--primary);
-	font-weight: 600;
-	padding: 2px 4px;
-	margin-left: -2px;
-	margin-right: -2px;
-	
+  border-radius: 5px;
+  color: var(--primary);
+  font-weight: 600;
+  padding: 2px 4px;
+  margin-left: -2px;
+  margin-right: -2px;
 }
 
 .project-image {
   opacity: 1;
-  transition: .5s ease;
+  border-radius: 10px;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
@@ -361,11 +385,11 @@ a {
   top: 10%;
   left: 5%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .project-title {
-  font-family: 'Smooch';
+  font-family: "Smooch";
   font-size: 2em;
   font-weight: lighter;
   color: var(--light);
@@ -376,26 +400,20 @@ a {
 }
 
 article:hover .project-image {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 article:hover .project-info {
   opacity: 1;
 }
 
-.navActive {
-  color: var(--secondary);
-  background-color: var(--tertiary);
-  border-radius: 10px;
-}
-
 svg {
   font-size: 2.5em;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 svg:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 @media screen and (min-width: 600px) {

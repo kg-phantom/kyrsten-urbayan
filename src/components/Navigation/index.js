@@ -12,7 +12,7 @@ function Nav(props) {
                     tabs.map(tab => (
                         <li 
                         className={`mx-2 px-1 ${
-                            currentPage === tab && 'navActive'
+                            currentPage === tab ? 'navActive' : 'underline'
                         }`}
                         key={tab}
                         onClick={() => setCurrentPage(tab)}>
