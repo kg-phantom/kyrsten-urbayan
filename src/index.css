@@ -105,7 +105,7 @@ a:hover {
 
 header {
   height: fit-content;
-  background-image: url("./assets/images/pexels-anni-roenkae-3219951.jpg");
+  /* background-image: url("./assets/images/pexels-anni-roenkae-3219951.jpg"); */
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
