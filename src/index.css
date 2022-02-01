@@ -311,8 +311,39 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
+/* Card styles */
 .card {
   width: auto;
+  height: 25rem;
+  perspective: 150rem;
+  position: relative;
+  margin: 2rem;
+  box-shadow: none;
+}
+
+.card-side {
+  width: auto;
+  border-radius: 15px;
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+}
+
+.card-side.back {
+  transform: rotateY(-180deg);
+  background-color: #4158d0;
+  background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);
+}
+
+.card:hover .card-side.front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-side.back {
+  transform: rotateY(0deg);
 }
 
 .project-card {
@@ -325,6 +356,7 @@ textarea {
   margin-bottom: 50px;
   cursor: pointer;
 }
+/* end Card styles */
 
 .modalBackdrop {
   background: rgba(0, 0, 0, 0.65);
