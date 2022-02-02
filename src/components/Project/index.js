@@ -4,7 +4,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Project({ project }) {
   return (
-    <article className="flex-row card py-2" key={project.name}>
+    <article className="flex-row card" key={project.name}>
       <div className="card-side front">
         <img
           src={require(`../../assets/images/projects/${project.id}.png`)}
@@ -31,6 +31,7 @@ function Project({ project }) {
             <FontAwesomeIcon icon={faGithub} />
           </a>
           <h3>{project.tech}</h3>
+          <p>{project.summary}</p>
         </div>
       </div>
     </article>
