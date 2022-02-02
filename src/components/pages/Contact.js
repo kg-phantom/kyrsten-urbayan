@@ -69,7 +69,6 @@ function Contact() {
       <h2 className="py-2">Contact</h2>
       <div className="flex-row space-between py-2">
         <form id="contact-form" onSubmit={handleSubmit}>
-          <div>
             <label htmlFor="name">Name:</label>
             <input
               type="text"
@@ -77,8 +76,6 @@ function Contact() {
               defaultValue={name}
               onChange={handleChange}
             />
-          </div>
-          <div>
             <label htmlFor="email">Email address:</label>
             <input
               type="email"
@@ -86,8 +83,6 @@ function Contact() {
               onChange={handleChange}
               defaultValue={email}
             />
-          </div>
-          <div>
             <label htmlFor="message">Message:</label>
             <textarea
               name="message"
@@ -95,7 +90,6 @@ function Contact() {
               onChange={handleChange}
               defaultValue={message}
             />
-          </div>
           {errorMessage && (
             <div>
               <p className="error-text">{errorMessage}</p>
