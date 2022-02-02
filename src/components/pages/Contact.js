@@ -103,7 +103,7 @@ function Contact() {
               <p className="error-text">Thank you for your message!</p>
             </div>
           )}
-          <button data-testid="submit-button" type="submit">
+          <button className="submit-btn" data-testid="submit-button" type="submit">
             Submit
           </button>
         </form>
