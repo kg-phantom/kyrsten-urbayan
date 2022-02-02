@@ -10,8 +10,11 @@ function Contact() {
   });
   const { name, email, message } = formState;
   const [errorMessage, setErrorMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
   function handleChange(e) {
+    setSubmitted(false);
+
     if (e.target.name === "email") {
       const isValid = validateEmail(e.target.value);
       if (!isValid) {
@@ -55,7 +58,7 @@ function Contact() {
     ).then(
       () => {
         setErrorMessage("");
-        console.log("success");
+        setSubmitted(true);
       },
       (error) => {
         setErrorMessage("Something went wrong sending your email!");
@@ -69,30 +72,35 @@ function Contact() {
       <h2 className="py-2">Contact</h2>
       <div className="flex-row space-between py-2">
         <form id="contact-form" onSubmit={handleSubmit}>
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              name="name"
-              defaultValue={name}
-              onChange={handleChange}
-            />
-            <label htmlFor="email">Email address:</label>
-            <input
-              type="email"
-              name="email"
-              onChange={handleChange}
-              defaultValue={email}
-            />
-            <label htmlFor="message">Message:</label>
-            <textarea
-              name="message"
-              rows="5"
-              onChange={handleChange}
-              defaultValue={message}
-            />
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            defaultValue={name}
+            onChange={handleChange}
+          />
+          <label htmlFor="email">Email address:</label>
+          <input
+            type="email"
+            name="email"
+            onChange={handleChange}
+            defaultValue={email}
+          />
+          <label htmlFor="message">Message:</label>
+          <textarea
+            name="message"
+            rows="5"
+            onChange={handleChange}
+            defaultValue={message}
+          />
           {errorMessage && (
             <div>
               <p className="error-text">{errorMessage}</p>
+            </div>
+          )}
+          {submitted && (
+            <div>
+              <p className="error-text">Thank you for your message!</p>
             </div>
           )}
           <button data-testid="submit-button" type="submit">
@@ -102,7 +110,12 @@ function Contact() {
         <div className="contact-text">
           <h4>Send me a message!</h4>
           <p className="py-2">
-              I am happy to answer any questions you might have. I'm also open to any web development or art opportiunities! You can contact me through this contact form, clicking on my links below, or emailing me directly at <a href="mailto:ksurbayan@gmail.com">ksurbayan@gmail.com</a>. I look forward to hearing from you!
+            I am happy to answer any questions you might have. I'm also open to
+            any web development or art opportiunities! You can contact me
+            through this contact form, clicking on my links below, or emailing
+            me directly at{" "}
+            <a href="mailto:ksurbayan@gmail.com">ksurbayan@gmail.com</a>. I look
+            forward to hearing from you!
           </p>
         </div>
       </div>
