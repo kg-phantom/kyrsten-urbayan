@@ -39,7 +39,8 @@ body {
   letter-spacing: 0.1em;
   background: var(--dark);
   color: var(--light);
-  font-family: "Poiret One", cursive;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 h1,
@@ -105,17 +106,20 @@ a:hover {
 
 header {
   height: 100%;
-  /* background-image: url("./assets/images/pexels-anni-roenkae-3219951.jpg"); */
 }
 
 .header-bg {
   z-index: -1;
-  position: absolute;
   width: 100%;
 }
 
 header a {
   color: var(--light);
+}
+
+.Typewriter {
+  position: absolute;
+  font-size: 5rem;
 }
 
 button {
@@ -335,7 +339,12 @@ textarea {
 .card-side.back {
   transform: rotateY(-180deg);
   background-color: #4158d0;
-  background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
 }
 
 .card:hover .card-side.front {
