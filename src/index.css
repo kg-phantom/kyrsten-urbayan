@@ -218,6 +218,14 @@ nav li {
 .navActive {
   border-bottom: solid 2px var(--primary);
 }
+
+.link {
+  font-weight: lighter;
+}
+
+.link:hover {
+  text-decoration: none;
+}
 /* end Nav styles */
 
 label {
