@@ -313,12 +313,12 @@ textarea {
 
 /* Card styles */
 .card {
-  width: auto;
+  width: 45%;
   height: 25rem;
   perspective: 150rem;
   position: relative;
-  margin: 2rem;
   box-shadow: none;
+  margin-top: 2em;
 }
 
 .card-side {
@@ -344,10 +344,6 @@ textarea {
 
 .card:hover .card-side.back {
   transform: rotateY(0deg);
-}
-
-.project-card {
-  position: relative;
 }
 
 .img-thumbnail {
@@ -418,6 +414,7 @@ a {
   left: 5%;
   opacity: 0;
   transition: 0.5s ease;
+  background: none;
 }
 
 .project-title {
@@ -448,8 +445,8 @@ svg:hover {
   opacity: 0.7;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 992px) {
   .card {
-    width: 45%;
+    width: 100%;
   }
 }
