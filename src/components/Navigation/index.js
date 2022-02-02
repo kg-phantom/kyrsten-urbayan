@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { scroller } from "react-scroll";
 
 function Nav(props) {
   const tabs = ["About", "Portfolio", "Contact", "Resume"];
@@ -15,16 +15,14 @@ function Nav(props) {
               currentPage === tab ? "navActive" : "underline"
             }`}
             key={tab}
+            onClick={() => {
+                setCurrentPage(tab);
+                scroller.scrollTo("main", {
+                    smooth: true
+                });
+            }}
           >
-            <Link
-              className="link"
-              onClick={() => setCurrentPage(tab)}
-              to={tab.toLowerCase()}
-              spy={true}
-              smooth={true}
-            >
-              {tab}
-            </Link>
+            {tab}
           </li>
         ))}
       </ul>

@@ -3,7 +3,7 @@ import headshot from '../../assets/images/headshot.jpg';
 
 function About() {
     return (
-        <div id="about">
+        <div name="About">
             <h2 className='py-2'>About me</h2>
             <div className='py-2'>
                 <img className="headshot" src={headshot} alt='Kyrsten Urbayan' />

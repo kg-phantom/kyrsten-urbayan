@@ -50,7 +50,7 @@ function Contact() {
     }
 
     return (
-        <div id="contact">
+        <div name="Contact">
             <h2 className='py-2'>Contact</h2>
             <form id='contact-form' onSubmit={handleSubmit}>
             <div>

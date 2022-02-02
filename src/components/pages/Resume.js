@@ -6,7 +6,7 @@ function Resume() {
     const backEnd = ['APIs', 'Node.js', 'Express.js', 'MySQL','Sequelize', 'MongoDB', 'Mongoose'];
 
     return (
-        <div id="resume">
+        <div name="Resume">
             <h2 className='py-2'>Resume</h2>
             <div>
                 <p>

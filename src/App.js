@@ -30,7 +30,7 @@ function App() {
       currentPage={currentPage}
       setCurrentPage={setCurrentPage}></Header>
       <main>
-        <div>
+        <div name="main">
           {renderPage()}
         </div>
       </main>
