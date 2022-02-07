@@ -3,7 +3,7 @@ import resume from '../../assets/documents/Kyrsten-Urbayan-Technical-Resume.pdf'
 
 function Resume() {
     const frontEnd = ['HTML5', 'CSS', 'JavaScript', 'Bootstrap', 'JQuery', 'AJAX', 'Responsive Design', 'React'];
-    const backEnd = ['APIs', 'Node.js', 'Express.js', 'MySQL','Sequelize', 'MongoDB', 'Mongoose'];
+    const backEnd = ['APIs', 'Node.js', 'Express.js', 'MySQL','Sequelize', 'MongoDB', 'Mongoose', 'GraphQL', 'Apollo'];
 
     return (
         <div name="Resume">
