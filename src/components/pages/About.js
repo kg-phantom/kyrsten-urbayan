@@ -5,8 +5,17 @@ function About() {
     return (
         <div name="About">
             <h2 className='py-2'>About me</h2>
-            <div className='py-2'>
+            <div className='py-2 flex-row space-between'>
                 <img className="headshot" src={headshot} alt='Kyrsten Urbayan' />
+                <div className='me-const'>
+                    const me = &#123;
+                    <div className='me-props'>
+                        name: 'Kyrsten Urbayan',
+                        <br />
+                        hobbies: ['coding', 'drawing', 'singing(badly)', 'gaming', 'eating']
+                    </div>
+                    &#125;
+                </div>
                 <p className='py-2 about-text'>
                 I am a full-stack web developer based in Southern California utilizing a background in illustration and graphic design to develop visually appealing, intuitive, and efficient web applications. I graduated from UCLA Extension's Web Development Boot Camp, earning a certificate in Full-Stack Web Development. I like to practice my front-end skills in HTML, CSS, JavaScript, Bootstrap, jQuery, and React. However, I have the most fun building robust back-ends with Node, Express, MySQL, MongoDB, Apollo, and GraphQL!
                 <br />

@@ -90,6 +90,15 @@ p {
   margin-top: 0;
 }
 
+.me-const {
+  margin: auto;
+}
+
+.me-props {
+  position: relative;
+  left: 5%;
+}
+
 .about-text {
   width: 100%;
 }
