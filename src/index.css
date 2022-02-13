@@ -92,11 +92,28 @@ p {
 
 .me-const {
   margin: auto;
+  font-family: monospace;
+}
+
+.const {
+  color:#0093e9;
 }
 
 .me-props {
   position: relative;
   left: 5%;
+}
+
+.prop-name {
+  color:#71c3f3
+}
+
+.string {
+  color: var(--primary);
+}
+
+.true {
+  color:#0093e9;
 }
 
 .about-text {

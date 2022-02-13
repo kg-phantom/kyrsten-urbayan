@@ -8,11 +8,17 @@ function About() {
             <div className='py-2 flex-row space-between'>
                 <img className="headshot" src={headshot} alt='Kyrsten Urbayan' />
                 <div className='me-const'>
-                    const me = &#123;
+                    <span className="const">const</span> me = &#123;
                     <div className='me-props'>
-                        name: 'Kyrsten Urbayan',
+                        <span className='prop-name'>name:</span> <span className='string'>'Kyrsten Urbayan'</span>,
                         <br />
-                        hobbies: ['coding', 'drawing', 'singing(badly)', 'gaming', 'eating']
+                        <span className="prop-name">pronouns:</span> [ <span className='string'>'she'</span>, <span className='string'>'her'</span> ]
+                        <br />
+                        <span className='prop-name'>hobbies:</span> [ <span className='string'>'coding'</span>, <span className='string'>'drawing'</span>, <span className='string'>'singing badly'</span>, <span className='string'>'gaming'</span>, <span className='string'>'eating'</span> ],
+                        <br />
+                        <span className='prop-name'>currentlyLearning:</span> [ <span className='string'>'AWS'</span>, <span className='string'>'Python'</span> ]
+                        <br />
+                        <span className='prop-name'>cravingBoba:</span> <span className='true'>true</span>
                     </div>
                     &#125;
                 </div>
