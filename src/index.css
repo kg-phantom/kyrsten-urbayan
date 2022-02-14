@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Smooch";
   src: local("Smooch"), url("./fonts/Smooch-Regular.ttf");
+  font-display: swap;
 }
 
 main {
