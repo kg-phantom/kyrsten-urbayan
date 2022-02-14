@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kyrsten-urbayan/static/css/main.29c5b85a.css",
+    "main.css": "/kyrsten-urbayan/static/css/main.a45b985a.css",
     "main.js": "/kyrsten-urbayan/static/js/main.164196b0.js",
     "static/js/787.d8905a13.chunk.js": "/kyrsten-urbayan/static/js/787.d8905a13.chunk.js",
     "static/media/5.png": "/kyrsten-urbayan/static/media/5.08e4a17917203ae3c623.png",
@@ -13,12 +13,12 @@
     "static/media/4.png": "/kyrsten-urbayan/static/media/4.9fb1f47d83d26ea537c5.png",
     "static/media/Kyrsten-Urbayan-Technical-Resume.pdf": "/kyrsten-urbayan/static/media/Kyrsten-Urbayan-Technical-Resume.33a7d64422ac12a40bc0.pdf",
     "index.html": "/kyrsten-urbayan/index.html",
-    "main.29c5b85a.css.map": "/kyrsten-urbayan/static/css/main.29c5b85a.css.map",
+    "main.a45b985a.css.map": "/kyrsten-urbayan/static/css/main.a45b985a.css.map",
     "main.164196b0.js.map": "/kyrsten-urbayan/static/js/main.164196b0.js.map",
     "787.d8905a13.chunk.js.map": "/kyrsten-urbayan/static/js/787.d8905a13.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29c5b85a.css",
+    "static/css/main.a45b985a.css",
     "static/js/main.164196b0.js"
   ]
 }
